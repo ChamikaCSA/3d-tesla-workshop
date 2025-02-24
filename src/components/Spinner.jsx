@@ -5,7 +5,7 @@ import _ from 'lodash';
 
 const Spinner = () => {
     const ref = useRef();
-    useFrame(state => {
+    useFrame(() => {
         const y = _.get(ref.current, 'rotation.y');
         if (y) {
             ref.current.rotation.y += .1;

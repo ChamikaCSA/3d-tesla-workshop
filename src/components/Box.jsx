@@ -1,5 +1,4 @@
-import { useRef } from 'react';
-import { useLoader, useFrame } from 'react-three-fiber';
+import { useLoader } from 'react-three-fiber';
 import * as THREE from 'three';
 import { useBox } from 'use-cannon';
 
@@ -21,14 +20,42 @@ const Box = props => {
     }
 
     const handlePointerEnter = e => {
-        e.object.scale.x = 1.5
-        e.object.scale.y = 1.5
-        e.object.scale.z = 1.5
+        const scale = 1.5;
+        const duration = 300;
+        const start = Date.now();
+
+        const animate = () => {
+            const progress = Math.min(1, (Date.now() - start) / duration);
+            const currentScale = 1 + (scale - 1) * progress;
+
+            e.object.scale.set(currentScale, currentScale, currentScale);
+
+            if (progress < 1) {
+                requestAnimationFrame(animate);
+            }
+        };
+
+        animate();
     }
 
     const handlePointerLeave = e => {
         if (!e.object.active) {
-            scaleDown(e.object)
+            const duration = 300;
+            const start = Date.now();
+            const startScale = e.object.scale.x;
+
+            const animate = () => {
+                const progress = Math.min(1, (Date.now() - start) / duration);
+                const currentScale = startScale + (1 - startScale) * progress;
+
+                e.object.scale.set(currentScale, currentScale, currentScale);
+
+                if (progress < 1) {
+                    requestAnimationFrame(animate);
+                }
+            };
+
+            animate();
         }
     }
 
