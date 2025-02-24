@@ -1,0 +1,24 @@
+{
+  "files": {
+    "main.css": "/3d-tesla-workshop/static/css/main.8c8b27cf.chunk.css",
+    "main.js": "/3d-tesla-workshop/static/js/main.e2c8c880.chunk.js",
+    "main.js.map": "/3d-tesla-workshop/static/js/main.e2c8c880.chunk.js.map",
+    "runtime-main.js": "/3d-tesla-workshop/static/js/runtime-main.dfc5ac0e.js",
+    "runtime-main.js.map": "/3d-tesla-workshop/static/js/runtime-main.dfc5ac0e.js.map",
+    "static/js/2.00083592.chunk.js": "/3d-tesla-workshop/static/js/2.00083592.chunk.js",
+    "static/js/2.00083592.chunk.js.map": "/3d-tesla-workshop/static/js/2.00083592.chunk.js.map",
+    "static/js/3.49257e79.chunk.js": "/3d-tesla-workshop/static/js/3.49257e79.chunk.js",
+    "static/js/3.49257e79.chunk.js.map": "/3d-tesla-workshop/static/js/3.49257e79.chunk.js.map",
+    "static/js/4.924ba281.chunk.js": "/3d-tesla-workshop/static/js/4.924ba281.chunk.js",
+    "static/js/4.924ba281.chunk.js.map": "/3d-tesla-workshop/static/js/4.924ba281.chunk.js.map",
+    "index.html": "/3d-tesla-workshop/index.html",
+    "static/css/main.8c8b27cf.chunk.css.map": "/3d-tesla-workshop/static/css/main.8c8b27cf.chunk.css.map",
+    "static/js/2.00083592.chunk.js.LICENSE.txt": "/3d-tesla-workshop/static/js/2.00083592.chunk.js.LICENSE.txt"
+  },
+  "entrypoints": [
+    "static/js/runtime-main.dfc5ac0e.js",
+    "static/js/2.00083592.chunk.js",
+    "static/css/main.8c8b27cf.chunk.css",
+    "static/js/main.e2c8c880.chunk.js"
+  ]
+}
